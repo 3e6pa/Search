@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017.04.01 15:47:44.671.pas,C:\Users\victor\Documents\RAD Studio\Projects\Unit2.pas=D:\Projects\Victor\Module\Search\ISearch.pas</Transaction>
+    <Transaction>2017.04.01 15:48:18.983.pas,C:\Users\victor\Documents\RAD Studio\Projects\Unit1.pas=D:\Projects\Victor\Module\Search\uMain.pas</Transaction>
+    <Transaction>2017.04.01 15:48:18.983.dfm,C:\Users\victor\Documents\RAD Studio\Projects\Unit1.dfm=D:\Projects\Victor\Module\Search\uMain.dfm</Transaction>
+    <Transaction>2017.04.01 15:48:24.343.dproj,C:\Users\victor\Documents\RAD Studio\Projects\Project1.dproj=D:\Projects\Victor\Module\Search\Search.dproj</Transaction>
+    <Transaction>2017.04.01 15:48:47.790.pas,D:\Projects\Victor\Module\Search\ISearch.pas=D:\Projects\Victor\Module\Search\uISearch.pas</Transaction>
+    <Transaction>2017.04.01 15:50:53.949.pas,D:\Projects\Victor\Module\Search\Unit1.pas=D:\Projects\Victor\Module\Search\umSearchRequest.pas</Transaction>
+    <Transaction>2017.04.01 15:51:13.120.pas,D:\Projects\Victor\Module\Search\Unit1.pas=D:\Projects\Victor\Module\Search\umSearchCompany.pas</Transaction>
+    <Transaction>2017.04.01 16:04:30.253.pas,D:\Projects\Victor\Module\Search\Unit1.pas=D:\Projects\Victor\Module\Search\uSearch.pas</Transaction>
+  </Transactions>
+</BorlandProject>
