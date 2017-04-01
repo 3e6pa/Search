@@ -41,11 +41,15 @@
 			<DCCReference Include="uMain.pas">
 				<Form>Form1</Form>
 			</DCCReference>
-			<DCCReference Include="uISearch.pas"/>
-			<DCCReference Include="umSearchRequest.pas"/>
-			<DCCReference Include="umSearchCompany.pas"/>
-			<DCCReference Include="uSearch.pas"/>
 			<DCCReference Include="Events\uEventManager.pas"/>
+			<DCCReference Include="Search\uISearch.pas"/>
+			<DCCReference Include="Search\uSearch.pas"/>
+			<DCCReference Include="SearchRquiest\umSearchRequest.pas"/>
+			<DCCReference Include="SearchRquiest\uvSearchRequest.pas">
+				<Form>frmSearchRequiest</Form>
+			</DCCReference>
+			<DCCReference Include="SearchRquiest\ueSimpleSearch.pas"/>
+			<DCCReference Include="uDataResource.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

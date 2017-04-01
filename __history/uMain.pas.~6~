@@ -51,8 +51,7 @@ procedure TForm1.rbSearchRequiestClick(Sender: TObject);
 var
   mSearchRequest: TmSearchRequest;
 begin
-  mSearchRequest := TmSearchRequest.Create;
-  GlobalSearch := mSearchRequest;
+  GlobalSearch := mSearchRequest.Create;
   TmveSimpleSearchRequest.Create(mSearchRequest);
 end;
 

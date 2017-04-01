@@ -1,0 +1,27 @@
+unit uvSearchRequest;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TfrmSearchRequest = class(TForm)
+    edtSearchText: TEdit;
+    btnSearch: TButton;
+    lvRequestList: TListView;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSearchRequest: TfrmSearchRequest;
+
+implementation
+
+{$R *.dfm}
+
+end.

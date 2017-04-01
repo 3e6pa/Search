@@ -18,11 +18,5 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TfrmSearchRequiest, frmSearchRequiest);
-  RequiestList := TRequiestList.Create;
-  RequiestList.init;
-  CompanyList := TCompanyList.Create;
-  CompanyList.init;
   Application.Run;
 end.
-
-

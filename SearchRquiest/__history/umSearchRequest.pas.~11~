@@ -1,0 +1,36 @@
+unit umSearchRequest;
+
+interface
+
+uses
+  uSearch,
+  uDataResource;
+
+type
+  TmSearchRequest = class(TSearch)
+    SearchText: string;
+    FindRecordCount: integer;
+    FindList: TRequiestList;
+    procedure Search(value: string);
+  end;
+
+implementation
+
+{ TmSearchRequest }
+
+procedure TmSearchRequest.Search(value: string);
+var
+  Requiest: TmRequiest;
+begin
+  if not Assigned(FindList) then
+    FindList := TRequiestList.Create();
+  FindList.Clear;
+  for Requiest in RequiestList do
+    if Requiest.number = value then
+      FindList.Add(Requiest);
+
+end;
+
+end.
+
+

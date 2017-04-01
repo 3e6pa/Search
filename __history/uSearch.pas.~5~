@@ -1,0 +1,85 @@
+unit uSearch;
+
+interface
+
+uses
+  uISearch,
+  uEventManager,
+  Classes;
+
+type
+  TSearch = class(TInterfacedObject, ISearch)
+  private
+    type
+      TEventManager = class
+        BeforeSearch: TEvents;
+        AfterSearch: TEvents;
+        BeforeFillResult: TEvents;
+        AfterFillResult: TEvents;
+        BeforeShow: TEvents;
+        AfterShow: TEvents;
+        BeforeClose: TEvents;
+        AfterClose: TEvents;
+      end;
+  private
+    procedure DoEvent(Event: TNotifyEvent);
+  protected
+    Events: TEventManager;
+    OnSearch: TNotifyEvent;
+    OnFillResult: TNotifyEvent;
+    OnShow: TNotifyEvent;
+    OnClose: TNotifyEvent;
+  protected
+     /// <summary>
+    ///   Выполненить поиск (источник - определяется вами)
+    /// </summary>
+    procedure Search; virtual;
+    /// <summary>
+    ///   Заполнить объект представления резльтатами поиска
+    /// </summary>
+    procedure FillResult; virtual;
+    /// <summary>
+    ///   Открыть окно поиска
+    /// </summary>
+    procedure Show; virtual;
+    /// <summary>
+    ///   Закрыть окно поиска
+    /// </summary>
+    procedure Close; virtual;
+  end;
+
+implementation
+
+{ TSearch }
+
+procedure TSearch.Close;
+begin
+  Events.BeforeClose.DoEvents;
+  DoEvent(OnClose);
+  Events.AfterClose.DoEvents;
+end;
+
+procedure TSearch.DoEvent(Event: TNotifyEvent);
+begin
+  if Assigned(Event) then
+    Event(Self)
+end;
+
+procedure TSearch.FillResult;
+begin
+
+end;
+
+procedure TSearch.Search;
+begin
+
+end;
+
+procedure TSearch.Show;
+begin
+
+end;
+
+end.
+
+

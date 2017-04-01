@@ -21,7 +21,6 @@ type
     rbSearchRequiest: TRadioButton;
     rbSearchCompany: TRadioButton;
     procedure btnSearchClick(Sender: TObject);
-    procedure rbSearchRequiestClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,10 +33,6 @@ var
 
 implementation
 
-uses
-  umSearchRequest,
-  ueSimpleSearch;
-
 
 
 {$R *.dfm}
@@ -45,15 +40,6 @@ uses
 procedure TForm1.btnSearchClick(Sender: TObject);
 begin
   GlobalSearch.Show;
-end;
-
-procedure TForm1.rbSearchRequiestClick(Sender: TObject);
-var
-  mSearchRequest: TmSearchRequest;
-begin
-  mSearchRequest := TmSearchRequest.Create;
-  GlobalSearch := mSearchRequest;
-  TmveSimpleSearchRequest.Create(mSearchRequest);
 end;
 
 end.

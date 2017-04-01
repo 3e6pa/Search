@@ -9,5 +9,15 @@
     <Transaction>2017.04.01 15:50:53.949.pas,D:\Projects\Victor\Module\Search\Unit1.pas=D:\Projects\Victor\Module\Search\umSearchRequest.pas</Transaction>
     <Transaction>2017.04.01 15:51:13.120.pas,D:\Projects\Victor\Module\Search\Unit1.pas=D:\Projects\Victor\Module\Search\umSearchCompany.pas</Transaction>
     <Transaction>2017.04.01 16:04:30.253.pas,D:\Projects\Victor\Module\Search\Unit1.pas=D:\Projects\Victor\Module\Search\uSearch.pas</Transaction>
+    <Transaction>2017.04.01 16:30:49.316.pas,D:\Projects\Victor\Module\GitHub\Search\umSearchRequest.pas=</Transaction>
+    <Transaction>2017.04.01 16:30:52.394.pas,D:\Projects\Victor\Module\GitHub\Search\umSearchCompany.pas=</Transaction>
+    <Transaction>2017.04.01 16:31:35.737.pas,D:\Projects\Victor\Module\GitHub\Search\uISearch.pas=</Transaction>
+    <Transaction>2017.04.01 16:31:38.482.pas,D:\Projects\Victor\Module\GitHub\Search\uSearch.pas=</Transaction>
+    <Transaction>2017.04.01 16:38:18.966.pas,D:\Projects\Victor\Module\GitHub\Search\Unit2.pas=D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\frmSearchRequest.pas</Transaction>
+    <Transaction>2017.04.01 16:38:18.966.dfm,D:\Projects\Victor\Module\GitHub\Search\Unit2.dfm=D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\frmSearchRequest.dfm</Transaction>
+    <Transaction>2017.04.01 16:38:41.975.pas,D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\frmSearchRequest.pas=D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\uvSearchRequest.pas</Transaction>
+    <Transaction>2017.04.01 16:38:41.975.dfm,D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\frmSearchRequest.dfm=D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\uvSearchRequest.dfm</Transaction>
+    <Transaction>2017.04.01 16:52:53.559.pas,D:\Projects\Victor\Module\GitHub\Search\Unit1.pas=D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\ueSimpleSearch.pas</Transaction>
+    <Transaction>2017.04.01 17:07:46.050.pas,D:\Projects\Victor\Module\GitHub\Search\Unit1.pas=D:\Projects\Victor\Module\GitHub\Search\uDataResource.pas</Transaction>
   </Transactions>
 </BorlandProject>

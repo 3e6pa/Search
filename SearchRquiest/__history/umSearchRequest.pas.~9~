@@ -1,0 +1,28 @@
+unit umSearchRequest;
+
+interface
+
+uses
+  uSearch,
+  uDataResource;
+
+type
+  TmSearchRequest = class(TSearch)
+    SearchText: string;
+    FindRecordCount: integer;
+    FindList: TRequiestList;
+    procedure Search(value: string);
+  end;
+
+implementation
+
+{ TmSearchRequest }
+
+procedure TmSearchRequest.Search(value: string);
+begin
+
+end;
+
+end.
+
+

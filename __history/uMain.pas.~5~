@@ -34,10 +34,6 @@ var
 
 implementation
 
-uses
-  umSearchRequest,
-  ueSimpleSearch;
-
 
 
 {$R *.dfm}
@@ -48,12 +44,8 @@ begin
 end;
 
 procedure TForm1.rbSearchRequiestClick(Sender: TObject);
-var
-  mSearchRequest: TmSearchRequest;
 begin
-  mSearchRequest := TmSearchRequest.Create;
-  GlobalSearch := mSearchRequest;
-  TmveSimpleSearchRequest.Create(mSearchRequest);
+  GlobalSearch := T
 end;
 
 end.
