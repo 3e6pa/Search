@@ -7,10 +7,9 @@ uses
 
 type
   TmveSimpleSearchRequest = class
-  private
-    FModel: TmSearchRequest;
   public
-    constructor Create(Model: TmSearchRequest);
+    Model: TmSearchRequest;
+    constructor Create(Model: TSearchRequest);
     procedure Show(Sender: TObject);
     procedure Close(Sender: TObject);
     procedure Search(Sender: TObject);
@@ -36,7 +35,8 @@ end;
 
 constructor TmveSimpleSearchRequest.Create(Model: TmSearchRequest);
 begin
-  FModel := Model;
+  Self.Model := Model;
+  RegEvents;
 end;
 
 procedure TmveSimpleSearchRequest.FillResult(Sender: TObject);
@@ -44,7 +44,7 @@ var
   item: TListItem;
   Requiest: TmRequiest;
 begin
-  for Requiest in FModel.FindList do
+  for Requiest in Model.FindList do
   begin
     item := frmSearchRequiest.lvRequestList.Items.Add;
     item.Caption := DateTostr(Requiest.date);
@@ -54,16 +54,17 @@ end;
 
 procedure TmveSimpleSearchRequest.RegEvents;
 begin
-  FModel.OnSearch := Search;
-  FModel.OnShow := Show;
-  FModel.OnClose := Close;
-  FModel.OnFillResult := FillResult;
-  FModel.Events.AfterSearch.RegEvent(FillResult);
+  Model.OnSearch := Search;
+  Model.OnShow := Show;
+  Model.OnClose := Close;
+  Model.OnFillResult := FillResult;
+  Model.Events.AfterSearch.RegEvent(FillResult);
 end;
 
 procedure TmveSimpleSearchRequest.Search(Sender: TObject);
 begin
-  FModel.SearchText := frmSearchRequiest.edtSearchText.Text;
+  Model.SearchText := frmSearchRequiest.edtSearchText.Text;
+  Model.Search;
 end;
 
 procedure TmveSimpleSearchRequest.Show(Sender: TObject);

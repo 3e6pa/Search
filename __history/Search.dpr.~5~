@@ -9,10 +9,7 @@ uses
   umSearchRequest in 'SearchRquiest\umSearchRequest.pas',
   uvSearchRequest in 'SearchRquiest\uvSearchRequest.pas' {frmSearchRequiest},
   ueSimpleSearch in 'SearchRquiest\ueSimpleSearch.pas',
-  uDataResource in 'uDataResource.pas',
-  umSearchCompany in 'SearchCompany\umSearchCompany.pas',
-  uvSearchCompany in 'SearchCompany\uvSearchCompany.pas' {frmSearchCompany},
-  ueSearchCompany in 'SearchCompany\ueSearchCompany.pas';
+  uDataResource in 'uDataResource.pas';
 
 {$R *.res}
 
@@ -21,7 +18,6 @@ begin
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TfrmSearchRequiest, frmSearchRequiest);
-  Application.CreateForm(TfrmSearchCompany, frmSearchCompany);
   RequiestList := TRequiestList.Create;
   RequiestList.init;
   CompanyList := TCompanyList.Create;

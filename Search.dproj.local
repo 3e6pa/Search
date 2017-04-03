@@ -19,5 +19,9 @@
     <Transaction>2017.04.01 16:38:41.975.dfm,D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\frmSearchRequest.dfm=D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\uvSearchRequest.dfm</Transaction>
     <Transaction>2017.04.01 16:52:53.559.pas,D:\Projects\Victor\Module\GitHub\Search\Unit1.pas=D:\Projects\Victor\Module\GitHub\Search\SearchRquiest\ueSimpleSearch.pas</Transaction>
     <Transaction>2017.04.01 17:07:46.050.pas,D:\Projects\Victor\Module\GitHub\Search\Unit1.pas=D:\Projects\Victor\Module\GitHub\Search\uDataResource.pas</Transaction>
+    <Transaction>2017.04.03 10:54:56.465.pas,D:\Projects\Victor\Module\GitHub\Search\Unit2.pas=D:\Projects\Victor\Module\GitHub\Search\SearchCompany\uvSearchCompany.pas</Transaction>
+    <Transaction>2017.04.03 10:54:56.465.dfm,D:\Projects\Victor\Module\GitHub\Search\Unit2.dfm=D:\Projects\Victor\Module\GitHub\Search\SearchCompany\uvSearchCompany.dfm</Transaction>
+    <Transaction>2017.04.03 10:58:47.977.pas,D:\Projects\Victor\Module\GitHub\Search\Unit1.pas=D:\Projects\Victor\Module\GitHub\Search\SearchCompany\umveSearchCompany.pas</Transaction>
+    <Transaction>2017.04.03 10:59:48.162.pas,D:\Projects\Victor\Module\GitHub\Search\SearchCompany\umveSearchCompany.pas=D:\Projects\Victor\Module\GitHub\Search\SearchCompany\ueSearchCompany.pas</Transaction>
   </Transactions>
 </BorlandProject>

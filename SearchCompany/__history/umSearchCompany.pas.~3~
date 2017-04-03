@@ -7,7 +7,7 @@ uses
   uDataResource;
 
 type
-  TmSearchCompany = class(TSearch)
+  TmCompanySearch = class(TSearch)
     SearchText: string;
     FindList: TCompanyList;
     procedure Search;
@@ -17,14 +17,14 @@ implementation
 
 { TmCompanySearch }
 
-procedure TmSearchCompany.Search;
+procedure TmCompanySearch.Search;
 var
   Company: TmCompany;
 begin
   if not Assigned(FindList) then
-    FindList := TCompanyList.Create();
+    FindList := TRequiestList.Create();
   FindList.Clear;
-  for Company in CompanyList do
+  for Company in RequiestList do
     if Company.name = SearchText then
       FindList.Add(Company);
 end;

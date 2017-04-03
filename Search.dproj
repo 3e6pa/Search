@@ -50,6 +50,11 @@
 			</DCCReference>
 			<DCCReference Include="SearchRquiest\ueSimpleSearch.pas"/>
 			<DCCReference Include="uDataResource.pas"/>
+			<DCCReference Include="SearchCompany\umSearchCompany.pas"/>
+			<DCCReference Include="SearchCompany\uvSearchCompany.pas">
+				<Form>frmSearchCompany</Form>
+			</DCCReference>
+			<DCCReference Include="SearchCompany\ueSearchCompany.pas"/>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>

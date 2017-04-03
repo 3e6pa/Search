@@ -3,13 +3,13 @@ unit ueSimpleSearch;
 interface
 
 uses
-  umSearchRequest;
+  umSearchRequest, uSearch;
 
 type
   TmveSimpleSearchRequest = class
   public
     Model: TmSearchRequest;
-    constructor Create(Model: TmSearchRequest);
+    constructor Create(Model: TSearch);
     procedure Show(Sender: TObject);
     procedure Close(Sender: TObject);
     procedure Search(Sender: TObject);
@@ -33,9 +33,9 @@ begin
   frmSearchRequiest.Close;
 end;
 
-constructor TmveSimpleSearchRequest.Create(Model: TmSearchRequest);
+constructor TmveSimpleSearchRequest.Create(Model: TSearch);
 begin
-  Self.Model := Model;
+  Self.Model :=TmSearchRequest(Model);
   RegEvents;
 end;
 
@@ -62,8 +62,6 @@ begin
 end;
 
 procedure TmveSimpleSearchRequest.Search(Sender: TObject);
-var
-  Requiest: TmRequiest;
 begin
   Model.SearchText := frmSearchRequiest.edtSearchText.Text;
   Model.Search;

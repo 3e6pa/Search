@@ -1,0 +1,49 @@
+unit ueSearchCompany;
+
+interface
+
+uses
+  umSearchCompany;
+
+type
+  TmveSearchCompany = class
+    Model: TmSearchCompany;
+    constructor Create(Model: TmSearchCompany);
+    procedure Show(Sender: TObject);
+    procedure Close(Sender: TObject);
+    procedure Search(Sender: TObject);
+    procedure FillResult(Sender: TObject);
+  end;
+
+implementation
+
+{ TmveSearchCompany }
+
+procedure TmveSearchCompany.Close(Sender: TObject);
+begin
+
+end;
+
+constructor TmveSearchCompany.Create(Model: TmSearchCompany);
+begin
+  Self.Model := Model;
+end;
+
+procedure TmveSearchCompany.FillResult(Sender: TObject);
+begin
+
+end;
+
+procedure TmveSearchCompany.Search(Sender: TObject);
+begin
+
+end;
+
+procedure TmveSearchCompany.Show(Sender: TObject);
+begin
+  frmSearchCompany.Show;
+end;
+
+end.
+
+

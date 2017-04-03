@@ -1,0 +1,27 @@
+unit uvSearchCompany;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ComCtrls, StdCtrls;
+
+type
+  TfrmSearchCompany = class(TForm)
+    edtSearchText: TEdit;
+    btnSearch: TButton;
+    lvCompanyList: TListView;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSearchCompany: TfrmSearchCompany;
+
+implementation
+
+{$R *.dfm}
+
+end.

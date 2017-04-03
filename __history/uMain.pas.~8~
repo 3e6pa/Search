@@ -22,8 +22,6 @@ type
     rbSearchCompany: TRadioButton;
     procedure btnSearchClick(Sender: TObject);
     procedure rbSearchRequiestClick(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure rbSearchCompanyClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,16 +31,12 @@ type
 var
   Form1: TForm1;
   GlobalSearch: TSearch;
-  CompanySearch: TSearch;
-  RequiestSearch: TSearch;
 
 implementation
 
 uses
   umSearchRequest,
-  ueSimpleSearch,
-  umSearchCompany,
-  ueSearchCompany;
+  ueSimpleSearch;
 
 
 
@@ -53,22 +47,14 @@ begin
   GlobalSearch.Show;
 end;
 
-procedure TForm1.FormCreate(Sender: TObject);
-begin
-  CompanySearch := TmSearchCompany.Create;
-  RequiestSearch := TmSearchRequest.Create;
-  TmveSimpleSearchRequest.Create(RequiestSearch);
-  TmveSearchCompany.Create(CompanySearch);
-end;
-
-procedure TForm1.rbSearchCompanyClick(Sender: TObject);
-begin
-  GlobalSearch := CompanySearch;
-end;
-
 procedure TForm1.rbSearchRequiestClick(Sender: TObject);
+var
+  mSearchRequest: TmSearchRequest;
 begin
-  GlobalSearch := RequiestSearch;
+  mSearchRequest := TmSearchRequest.Create;
+  TmveSimpleSearchRequest.Create(mSearchRequest);
+
+  GlobalSearch := mSearchRequest;
 end;
 
 end.

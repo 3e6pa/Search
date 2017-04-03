@@ -1,0 +1,18 @@
+unit umSearchCompany;
+
+interface
+
+uses
+  uSearch;
+
+type
+  TmCompanySearch = class(TSearch)
+    SearchText : string;
+
+  end;
+
+implementation
+
+end.
+
+
